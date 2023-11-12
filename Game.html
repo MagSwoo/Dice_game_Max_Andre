@@ -4,14 +4,25 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Dice Game</title>
- <link rel="stylesheet" href="styles.css">
+ <title>Going to Boston</title>
+ <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
- <h1>Dice Game</h1>
- <button type="button" class="start_button">Start Game</button>
+ <h1>Dice Game: Going to Boston</h1>
+ <input type="number" class="rounds" maxlength="3" size="3" step="2" min="1"/><br /><br />
+ <input type="text" id="player1Name" placeholder="Enter Player 1 Name" /><br />
+ <input type="text" id="player2Name" placeholder="Enter Player 2 Name" /><br /> <br />
+ <button type="button" class="start_button">Start Game</button> <br /> <br />
 
+ <button type="button" class="roll_button hidden">Roll Dice</button>
+ <br /> <br />
+<b>SCOREBOARD</b>
+ <div id="game_info"></div> <br /> <br />
+ <b>GAME LOG</b>
+ <div id="dice_display"></div>
+ <button type="button" class="restart_button hidden">Restart Game</button>
  <script src="Game.js"></script>
- </body>
+</body>
+
 </html>
